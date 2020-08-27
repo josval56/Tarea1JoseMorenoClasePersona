@@ -14,28 +14,41 @@ public class Persona {
     int dni;
     String name,lastname;
     
-    //Constructor
+    //Constructor por defecto
     public Persona(){
-        System.out.println("Creando Datos...");
+     this.dni = dni;
+     this.name = "";
+     this. lastname = "";
     }
     
+    // Contructor DNI
     public Persona(int dni){
+     this();
      this.dni = dni;
-     System.out.println("Creando dni: " + dni);
     }
+    
+    // Contructor DNI, Nombre
      public Persona(int dni, String name){
-     this.dni = dni;
+     this(dni);
      this.name = name;
-     System.out.println("Creando dni y nombre: " + dni + name);
-    }
+     }
+     
+     // Contructor DNI, Nombre, Apellido
      public Persona(int dni, String name,String lastname){
-     this.dni = dni;
-     this.name = name;
+     this(dni,name);
      this.lastname = lastname;
-     System.out.println("Creando dni, nombre y Apellido: " + dni + name + lastname);
+     
     }
      
+     // Metodo que muestra los datos.
      public void mostrardata(){
-         System.out.println(dni+name+lastname);
+         
+         System.out.println(dni+ " " + name + " " + lastname);
+     }
+     
+     // Metodo que muesta solo el constructor por defecto.
+     public void mostrardataexception(){
+         
+         System.out.println(" " + name + " " + lastname);
      }
 }

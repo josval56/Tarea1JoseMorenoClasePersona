@@ -16,15 +16,17 @@ public class Tarea1JoseMorenoClasePersona {
      */
     public static void main(String[] args) {
         
+        //Creamos los Objeto de clase Persona. 
         Persona data,s_data,s_data_name,s_data_name_lastname;
         
-        data = new Persona(3495930,"Jose","Ramirez");
+        //Instanciamos los Objetos segun las consignas.
+        data = new Persona();
         s_data = new Persona(38493223);
         s_data_name = new Persona(38493223,"Ramon");
         s_data_name_lastname= new Persona(34454435,"Jesus","Diaz");
         
-        
-       data.mostrardata();
+        //Aplicamos el metodo en cada uno de los objetos.
+       data.mostrardataexception();
        s_data.mostrardata();
        s_data_name.mostrardata();
        s_data_name_lastname.mostrardata();
