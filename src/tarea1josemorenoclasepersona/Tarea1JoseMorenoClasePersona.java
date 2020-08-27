@@ -26,7 +26,7 @@ public class Tarea1JoseMorenoClasePersona {
         s_data_name_lastname= new Persona(34454435,"Jesus","Diaz");
         
         //Aplicamos el metodo en cada uno de los objetos.
-       data.mostrardataexception();
+       data.mostrardata();
        s_data.mostrardata();
        s_data_name.mostrardata();
        s_data_name_lastname.mostrardata();

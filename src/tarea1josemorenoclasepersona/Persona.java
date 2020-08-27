@@ -42,13 +42,11 @@ public class Persona {
      
      // Metodo que muestra los datos.
      public void mostrardata(){
-         
+         if(dni != 0){
          System.out.println(dni+ " " + name + " " + lastname);
+         }else{
+             System.out.println(" " + name + " " + lastname);
+         }
      }
      
-     // Metodo que muesta solo el constructor por defecto.
-     public void mostrardataexception(){
-         
-         System.out.println(" " + name + " " + lastname);
-     }
-}
+    }
