@@ -11,14 +11,16 @@ package tarea1josemorenoclasepersona;
  */
 public class Persona {
     
-    int dni;
+    int dni,edad;
     String name,lastname;
     
     //Constructor por defecto
     public Persona(){
      this.dni = dni;
      this.name = "";
-     this. lastname = "";
+     this.lastname = "";
+     this.edad = edad;
+     
     }
     
     // Contructor DNI
@@ -28,24 +30,30 @@ public class Persona {
     }
     
     // Contructor DNI, Nombre
-     public Persona(int dni, String name){
+     public Persona(int dni,String name){
      this(dni);
      this.name = name;
      }
      
      // Contructor DNI, Nombre, Apellido
-     public Persona(int dni, String name,String lastname){
+     public Persona(int dni,String name,String lastname){
      this(dni,name);
      this.lastname = lastname;
      
     }
+     public Persona(int dni,String name,String lastname,int edad){
+     this(dni,name,lastname);
+     this.edad= edad;
+     }
+     
+     
      
      // Metodo que muestra los datos.
      public void mostrardata(){
-         if(dni != 0){
-         System.out.println(dni+ " " + name + " " + lastname);
+         if(dni !=0 && edad != 0){
+         System.out.println(dni+ " " + name + " " + lastname + "  " + edad);
          }else{
-             System.out.println(" " + name + " " + lastname);
+             System.out.println(" " + name + " " + lastname );
          }
      }
      
